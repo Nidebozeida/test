@@ -1,0 +1,12 @@
+import matplotlib.pyplot as plt
+import numpy as np
+x = np.linspace(-1, 1, 200)
+y1 = np.sqrt(1-np.power(x, 2)) + np.power(np.square(x), 0.33)
+y2 = -np.sqrt(1-np.power(x, 2)) + np.power(np.square(x), 0.33)
+my_x_ticks = np.arange(-2, 2.5, 0.5)
+my_y_ticks = np.arange(-2, 2.5, 0.5)
+plt.plot(x, y1, color='r')
+plt.plot(x, y2, color='r')
+plt.xticks(my_x_ticks)
+plt.yticks(my_y_ticks)
+plt.show()
